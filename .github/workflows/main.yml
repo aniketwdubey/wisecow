@@ -36,7 +36,8 @@ jobs:
 
       - name: Build and Push
         run: |
-          docker build -t app:latest .
+          docker build -t app .
+          docker tag app aniketdubey/test
           docker push aniketdubey/test:latest
 
 
