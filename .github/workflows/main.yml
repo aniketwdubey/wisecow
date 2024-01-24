@@ -15,12 +15,12 @@ jobs:
 
       - name: Login to Container Registry
         run: |
-        docker build -t app .
-        
-        docker login -u aniketdubey -p dckr_pat_bBEGjtEQMenRbKl7BOP2QYvuhGE
+          docker build -t app .
+          
+          docker login -u aniketdubey -p dckr_pat_bBEGjtEQMenRbKl7BOP2QYvuhGE
 
-        docker tag app aniketdubey/test
-        docker push aniketdubey/test
+          docker tag app aniketdubey/test
+          docker push aniketdubey/test
 
     
 
