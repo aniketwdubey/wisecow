@@ -20,6 +20,9 @@ jobs:
         push: true
         tags: wisecow:latest
 
+
+        
+
     # - name: Deploy to Kubernetes
 
     #   uses: benbjaple/action-kube-deploy@v2.0.2 
