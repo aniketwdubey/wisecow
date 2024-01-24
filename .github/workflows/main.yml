@@ -13,26 +13,15 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v2
 
-      # - name: Login to Container Registry
-        # run: |
-
-        #   docker build -t app .
-        #   docker login -u ${{ secrets.DOCKER_USER }} -p ${{ secrets.DOCKER_PASSWORD }}
-        #   docker tag app aniketdubey/test
-        #   docker push aniketdubey/test
-
-    
-
-      # docker tag local-image:tagname new-repo:tagname
-      # docker push new-repo:tagname
-
-
       - name: Login to Container Registry
-        uses: docker/login-action@v1
-        with:
-          registry: docker.io
-          username: ${{ secrets.DOCKER_USER }}
-          password: ${{ secrets.DOCKER_PASSWORD }}
+        run: |
+          docker login -u ${{ secrets.DOCKER_USER }} -p ${{ secrets.DOCKER_PASSWORD }}
+      
+        # uses: docker/login-action@v1
+        # with:
+        #   registry: docker.io
+        #   username: ${{ secrets.DOCKER_USER }}
+        #   password: ${{ secrets.DOCKER_PASSWORD }}
 
       - name: Build and Push
         run: |
