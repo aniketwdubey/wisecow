@@ -15,9 +15,11 @@ jobs:
 
       - name: Login to Container Registry
         run: |
+          
+
           docker build -t app .
           
-          docker login -u aniketdubey -p dckr_pat_bBEGjtEQMenRbKl7BOP2QYvuhGE
+          docker login -u ${{ secrets.DOCKER_USER }} -p ${{ secrets.DOCKER_PASSWORD }}
 
           docker tag app aniketdubey/test
           docker push aniketdubey/test
