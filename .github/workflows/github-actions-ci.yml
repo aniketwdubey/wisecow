@@ -9,11 +9,12 @@ jobs:
     name: Deploy
     runs-on: ubuntu-latest
 
-    steps:
-    - name: Install wisecow
-      uses: wisecow/install-wisecow-cli-action@v1.1.1
-      with:
-          version: latest
+    # steps:
+    # - name: Install wisecow
+    #   uses: wisecow/install-wisecow-cli-action@v1.1.1
+    #   with:
+    #       version: latest
+
     - name: Checkout
       uses: actions/checkout@v2
 
