@@ -18,7 +18,7 @@ spec:
     spec:
       containers:
         - name: wisecow
-          image: 602917784174.dkr.ecr.us-east-2.amazonaws.com/wisecow:latest
+          image: 602917784174.dkr.ecr.us-east-2.amazonaws.com/wisecow:1.1
           ports:
             - containerPort: 4499
               protocol: TCP
