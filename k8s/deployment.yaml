@@ -18,6 +18,6 @@ spec:
         image: 602917784174.dkr.ecr.us-east-2.amazonaws.com/wisecow:1.1
         ports:
         - containerPort: 8080
-        - containerPort: 4499
+        # - containerPort: 4499
 
 

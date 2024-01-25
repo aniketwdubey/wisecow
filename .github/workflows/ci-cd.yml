@@ -1,4 +1,4 @@
-name: Node js app deploy to EKS
+name: CI CD
 on:
   push:
     branches: [ "main" ]
