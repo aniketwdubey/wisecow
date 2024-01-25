@@ -8,12 +8,13 @@ spec:
     matchLabels:
       app: wisecow
   template:
-    metadata:
+    metadata: 
       labels:
         app: wisecow
     spec:
       containers:
       - name: wisecow
-        image: wisecow:latest
+        image: wisecow:latest # image path
+        # image: 602917784174.dkr.ecr.us-east-2.amazonaws.com/wisecow
         ports:
         - containerPort: 4499
