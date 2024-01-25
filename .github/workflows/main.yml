@@ -29,6 +29,7 @@ jobs:
           docker build -t aniketdubey/wisecow:latest .
           docker push aniketdubey/wisecow:latest
 
+
       - name: Configure AWS CLI
         uses: aws-actions/configure-aws-credentials@v2
         with:
